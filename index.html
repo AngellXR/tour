@@ -6,6 +6,8 @@
     <meta name="description" content="Laser input UI • A-Frame" />
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <!-- GIF COMPONENT -->
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
     <script src="../../js/info-message.js"></script>
     <script src="highlight.js"></script>
     <script src="info-panel.js"></script>
@@ -22,17 +24,17 @@
       <a-assets>
         <a-asset-item id="messageText" src="message.html"></a-asset-item>
         <!--
-          Image source: http://www.ghibli.jp/works/kazetachinu/#frame&gid=1&pid=1
-          Image author: Studio Ghibli
+          Image source: https://www.google.com/maps/uv?pb=!1s0x89b926ef2bcf4bef%3A0x2e299676376029b9!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPqKMoynLq2z_TRcTXtaqyzH-VdQaHQtSKXAji8%3Dw213-h160-k-no!5suncle%20jon%27s%20soap%20shop%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipNTKxNKLiKKLcTNbObajNq2IBm6wDpfnu2BqKkD&hl=en&sa=X&ved=2ahUKEwiW_fiNt_TtAhVS2FkKHdlhC4kQoiowD3oECBwQAw#
+          Image author: Posted May 2015
         -->
         <img
           id="kazetachinu"
-          src="https://cdn.aframe.io/examples/ui/kazetachinu.jpg"
+          src="https://d3i9te5634opuo.cloudfront.net/jonsoap.gif"
           crossorigin="anonymous"
         />
         <img
           id="kazetachinuPoster"
-          src="https://cdn.aframe.io/examples/ui/kazetachinuPoster.jpg"
+          src="https://d3i9te5634opuo.cloudfront.net/jonssoapposter.png"
           crossorigin="anonymous"
         />
         <!--
@@ -46,7 +48,7 @@
         />
         <img
           id="ponyoPoster"
-          src="https://cdn.aframe.io/examples/ui/ponyoPoster.jpg"
+          src="https://d3i9te5634opuo.cloudfront.net/lilacposter.png"
           crossorigin="anonymous"
         />
         <!--
@@ -174,20 +176,20 @@
           <a-entity
             id="ponyoMovieImage"
             mixin="movieImage"
-            material="src: #ponyo"
-            visible="false"
+            material="shader:gif;src:url(#kazetachinu); transparent: true"
+            visible="true"
           ></a-entity>
           <a-entity
             id="kazetachinuMovieImage"
             mixin="movieImage"
             material="src: #kazetachinu"
-            visible="false"
+            visible="true"
           ></a-entity>
           <a-entity
             id="karigurashiMovieImage"
             mixin="movieImage"
             material="src: #karigurashi"
-            visible="false"
+            visible="true"
           ></a-entity>
           <a-entity
             id="movieTitle"
