@@ -1,0 +1,10 @@
+      <a-assets>
+        <img id="city" crossorigin="anonymous" src="https://d3i9te5634opuo.cloudfront.net/DoveHill360-1.JPG">
+        <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
+        <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
+        <img id="sechelt-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
+        <audio id="hover-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+        <img id="cubes" crossorigin="anonymous" src="https://d3i9te5634opuo.cloudfront.net/DoveHill360-2.JPG">
+        <img id="sechelt" crossorigin="anonymous" src="https://d3i9te5634opuo.cloudfront.net/DoveHill360-3.JPG">
+
+      </a-assets>
